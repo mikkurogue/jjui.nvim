@@ -30,7 +30,7 @@ Install with your favorite plugin manager.
 ```lua
 -- lua/plugins/jjui.lua
 return {
-  "your-username/jjui.nvim",
+  "ReKylee/jjui.nvim",
   dependencies = { "folke/snacks.nvim" },
   -- `opts` will be passed to the setup function automatically
   opts = {
@@ -44,13 +44,13 @@ return {
 ```Lua
 -- lua/plugins.lua
 use({
-"your-username/jjui.nvim",
-requires = { "folke/snacks.nvim" },
-config = function()
-require("jjui").setup({
--- your custom options here
-})
-end,
+  "ReKylee/jjui.nvim",
+  requires = { "folke/snacks.nvim" },
+  config = function()
+    require("jjui").setup({
+    -- your custom options here
+    })
+  end,
 })
 ```
 
